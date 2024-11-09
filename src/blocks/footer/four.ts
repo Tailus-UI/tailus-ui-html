@@ -62,7 +62,35 @@ export default function FooterSection(){
     )
 }`
 
-const nuxtjsCode = ``
+const nuxtjsCode = `
+    <footer class="border-b bg-white py-12 dark:bg-transparent">
+        <div class="mx-auto max-w-5xl px-6">
+            <div class="flex flex-wrap justify-between gap-6">
+                <span class="text-caption order-last block text-center text-sm md:order-first">&copy 2024 Tailus UI, All rights reserved</span>
+                <div class="order-first flex flex-wrap justify-center gap-6 text-sm md:order-last">
+                    <NuxtLink to="/" class="text-body block hover:text-title">
+                        <span>Features</span>
+                    </NuxtLink>
+                    <NuxtLink to="/" class="text-body block hover:text-title">
+                        <span>Solution</span>
+                    </NuxtLink>
+                    <NuxtLink to="/" class="text-body block hover:text-title">
+                        <span>Customers</span>
+                    </NuxtLink>
+                    <NuxtLink to="/" class="text-body block hover:text-title">
+                        <span>Pricing</span>
+                    </NuxtLink>
+                    <NuxtLink to="/" class="text-body block hover:text-title">
+                        <span>Help</span>
+                    </NuxtLink>
+                    <NuxtLink to="/" class="text-body block hover:text-title">
+                        <span>About</span>
+                    </NuxtLink>
+                </div>
+            </div>
+        </div>
+    </footer>
+`
 
 export const fourCode: Code = {
     html: htmlCode,
